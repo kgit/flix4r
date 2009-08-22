@@ -1,7 +1,8 @@
 module NetFlix
   class Credentials < Valuable
 
-    @@config_file_name = File.join( RAILS_ROOT, 'config', 'credentials.yml')  
+    @@config_file_name = if defined?(RAILS_ROOT) then File.join( RAILS_ROOT, 'config', 'credentials.yml')
+      else File.join(File.dirname(__FILE__), '..', '..', 'credentials.yml')
 
     has_value :key
     has_value :secret
