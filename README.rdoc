@@ -5,6 +5,8 @@ this is a gemification of the google code project found here: "http://code.googl
 
 Based on the "RESTful" resources provided by the NetFlix API, flix4r provides a clean, if _very_ incomplete, set of models for accessing NetFlixs' (sp?) resources.
 
+This version should work with rails (and currently only rails).
+
 ==Credentials
 You must add your netflix credentials to flix4r/lib/oauth.yml. You can get credentials from http://developer.netflix.com/.
 
