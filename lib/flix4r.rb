@@ -16,5 +16,5 @@ require File.join( this_dir, 'valuable' )
 
 builders = File.join( this_dir, 'net_flix', 'builders')
 
-ActiveSupport::Dependencies.load_paths << this_dir
-ActiveSupport::Dependencies.load_paths << builders
+ActiveSupport::Dependencies.autoload_paths << this_dir
+ActiveSupport::Dependencies.autoload_paths << builders

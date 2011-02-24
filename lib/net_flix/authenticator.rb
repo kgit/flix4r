@@ -38,6 +38,7 @@ module NetFlix
       "#{Request.encode(secret)}&#{Request.encode(access_token)}"
     end
 
+    require 'base64'
     def signature
       Base64.encode64(HMAC::SHA1.digest(signature_key,signature_base_string)).chomp.gsub(/\n/,'')
     end

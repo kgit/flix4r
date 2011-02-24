@@ -62,6 +62,12 @@ Gem::Specification.new do |s|
      "test/test_helper.rb",
      "test/title_test.rb"
   ]
+  
+  s.add_dependency( 'activesupport' )
+  s.add_dependency( 'ruby-hmac' )
+  s.add_dependency( 'nokogiri' )
+  s.add_dependency( 'crack' )
+  s.add_dependency( 'api_cache' )
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
